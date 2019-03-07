@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TriviaGame
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" id="begin" href="#">Start Game</a>
+        </li>
+    </ul>
+
+<H1>
+    Totally Trivial Trivia
+</H1>
+
+<div id="timeRemaining">
+    Time Remaining: 00:00
+</div>
+
+<div class="radioButtons">
+    <strong>Gender</strong>
+    <br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+</div>
+<br>
+<div class="radioButtons">
+    <strong>How old am I:</strong>
+    <br>
+        <input type="radio" name="age" value="Over30"> 30+<br>
+        <input type="radio" name="age" value="Under30"> 20s<br>
+</div>
+<br>
+<div class="radioButtons">
+    <strong>Whats My hobby:</strong>
+    <br>
+        <input type="radio" name="hobby" value="CigarsAndScotch"> Cigars and Scotch<br>
+        <input type="radio" name="hobby" value="Gamer"> Gamer<br>
+</div>
+<br>
+<div class="radioButtons">
+    <strong>Whats my favorite food:</strong>
+    <br>
+        <input type="radio" name="food" value="SteakAndLobster"> Steak and Lobster<br>
+        <input type="radio" name="food" value="WingsAndFries"> Wings and Fries<br>
+</div>
+
+
+
+<div id="Scorecard" class="content">
+    
+    <div id="correct">
+        Correct: 0
+    </div>
+       
+    <div id="incorrect">
+        Incorrect: 0
+    </div>
+
+    <div id="percentage">
+        Percentage: 0
+    </div>
+</div>
+
+
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+body{
+    background-color: darksalmon;
+}
+h1{
+    text-align: center;
+}
+#timeRemaining{
+    text-align: center;
+    font-weight: 900;
+}
+.radioButtons{
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+.content{
+    text-align: center;
+    display: none;
+}
+
+
+
