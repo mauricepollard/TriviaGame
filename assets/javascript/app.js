@@ -14,7 +14,7 @@ function start() {
 }
 
 function decrease() {
-    //I think the problem is num...the interval is being cleared whe the stop function is called
+    //I think the problem is num...the interval is being cleared when the stop function is called
     //but num is still decreasing if the game has been played and I click the start button again
     //Should I be testing against the interval variable?????
     num--;
@@ -29,15 +29,25 @@ function decrease() {
 
         alert("Time is up");
         stop();
+        reset();
         
         document.getElementById("Scorecard").style.display = "inline";
     }
 
 }
+
+function reset(){
+    $('input[type="radio"]').prop('checked', false);
+    correct = 0;
+    incorrect = 0; 
+    percentage = 0;
+}
+
 function stop() {
     clearInterval(interval);
     results();
     $("#timeRemaining").text("Time Remaining: 00:00");
+    num = 11;
 }
 function results() {
     var radioValue1 = $("input[name='gender']:checked").val();
